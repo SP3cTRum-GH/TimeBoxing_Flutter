@@ -40,6 +40,7 @@ class _PlanViewState extends State<PlanView> {
             flex: 10,
             child: Container(
               child: DayView(
+                currentTimeIndicatorBuilder:(dayViewStyle, topOffsetCalculator, hoursColumnWidth, isRtl) {},
                 userZoomable: false,
                 events: widget.planList,
                 date: widget.selectedDay,
